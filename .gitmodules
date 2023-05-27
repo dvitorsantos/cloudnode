@@ -1,0 +1,12 @@
+[submodule "cloudcollector"]
+	path = cloudcollector
+	url = https://github.com/dvitorsantos/cloudcollector
+[submodule "clouddeployer"]
+	path = clouddeployer
+	url = https://github.com/dvitorsantos/clouddeployer
+[submodule "cloudworker"]
+	path = cloudworker
+	url = https://github.com/dvitorsantos/cloudworker
+[submodule "cloudconsumer"]
+	path = cloudconsumer
+	url = https://github.com/dvitorsantos/cloudconsumer
