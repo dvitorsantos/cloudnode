@@ -23,9 +23,9 @@ services:
     environment:
       - NODE_UUID=cloudnode
       - NODE_NAME=cloudnode
-      - NODE_URL=http://cloudcollector:8080
+      - NODE_URL=http://clouddeployer:8080
       - WORKER_URL=http://cloudworker:8080
-      - CLOUDCONSUMER_URL=http://cloudconsumer:8080
+      - COLLECTOR_URL=http://cloudcollector:8080
       - IOTCATALOGER_URL=http://iotcataloguer:8080
     networks:
       - cdpo-development_default
@@ -38,6 +38,8 @@ services:
       - "8281:8080"
     environment:
       - CLOUDCONSUMER_URL=http://cloudconsumer:8080
+      - MOSQUITTO_URL=tcp://localhost:1883
+      - CLIENT_UUID=cloudnode
     networks:
       - cdpo-development_default
   cloudconsumer:
